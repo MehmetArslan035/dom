@@ -79,6 +79,16 @@ document.querySelector(".add-new").style.backgroundColor="pink"
 
 document.querySelector(".movie-item").style.backgroundColor="yellow"
 
+
+// diğer bir özelliği
+document.querySelector("#movie-ul #avatar").style.backgroundColor="crimson"
+
+
 //* ========================================
 //*              QUERYSELECTORALL()
 //* ========================================
+const movies=document.querySelectorAll(".movie-item")
+console.log(movies);
+
+const arrMovies=[...movies]
+console.log(arrMovies);
