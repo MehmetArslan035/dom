@@ -74,6 +74,11 @@ h2lerArray.forEach((item)=> console.log(item.textContent))
 //*              QUERYSELECTOR()
 //* ========================================
 
+document.querySelector("#tenet").style.backgroundColor="cadetblue"
+document.querySelector(".add-new").style.backgroundColor="pink"
+
+document.querySelector(".movie-item").style.backgroundColor="yellow"
+
 //* ========================================
 //*              QUERYSELECTORALL()
 //* ========================================
