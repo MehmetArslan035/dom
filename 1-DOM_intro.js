@@ -22,6 +22,10 @@ document.getElementById("moviesHeader").style.fontSize="2.5rem"
 
 const moviesHeader=document.getElementById("moviesHeader")
 
+const inception=document.getElementById("inception")
+
+inception.style.backgroundColor="lime"
+
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
 //*===========================================
