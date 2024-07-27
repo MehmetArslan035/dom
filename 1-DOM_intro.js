@@ -37,10 +37,18 @@ inception.innerHTML=`<h3 style="background-color:gray">Backlist</h3>
 //ArrayLike yapılar : arguments, HTML collection,NodeList(querySelectoAll ile gelir)
 // Array ile ArrayLike yapı arasındaki fark: Array-like yapılar diziler gibi indekslenebilir ve length özelliğine sahip olabilirler, ancak dizilerin sunduğu çoğu yöntemden (örneğin, push, pop, map, filter, vb.) yoksundurlar
 
-const addNewMovie=document.getElementsByClassName("add-new")
+const addNewMovie=document.getElementsByClassName("movie-item")
 console.log(addNewMovie);
 
 addNewMovie[4].style.color="red"
+
+for (let i=0;i<addNewMovie.length;i++){
+    console.log(addNewMovie[i].textContent);
+}
+
+// Spread operatoru ile arraye çevirelim
+const arrayMovies=[...addNewMovie]
+console.log(arrayMovies);
 
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
