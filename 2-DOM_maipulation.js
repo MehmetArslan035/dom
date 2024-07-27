@@ -26,3 +26,9 @@ movieInput.setAttribute("placeholder","Enter a movie name")
 movieInput.ariaPlaceholder="New Movie"
 
 movieInput.removeAttribute("type")
+
+
+// -----------------------------------------------------------
+
+const interstellar=document.getElementById("interstellar")
+interstellar.classList.add("highlight")

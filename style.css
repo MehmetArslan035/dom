@@ -28,4 +28,5 @@ header {
 .highlight {
     background-color: #ffeb3b;
     font-weight: bold;
+    border: 2px solid red;
 }
