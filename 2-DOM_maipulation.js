@@ -32,3 +32,11 @@ movieInput.removeAttribute("type")
 
 const interstellar=document.getElementById("interstellar")
 interstellar.classList.add("highlight")
+
+
+
+// bir elementin classa sahip olup olmadığını kontrolü
+// contains=> içeriyor mu- true veya false
+
+const check=interstellar.classList.contains("interstellar")
+console.log(check);
