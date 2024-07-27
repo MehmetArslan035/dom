@@ -17,7 +17,7 @@
 //*            GETELEMENTBYID()
 //*===========================================
 document.getElementById("moviesHeader").style.color="red"
-document.getElementById("movieHeader").style.fontWeight="bolder"
+document.getElementById("moviesHeader").style.fontWeight="bolder"
 document.getElementById("moviesHeader").style.fontSize="2.5rem"
 
 const moviesHeader=document.getElementById("moviesHeader")
@@ -26,10 +26,21 @@ const inception=document.getElementById("inception")
 
 inception.style.backgroundColor="lime"
 
+inception.innerText="God Father"
+inception.innerHTML=`<h3 style="background-color:gray">Backlist</h3>
+<p>I like this series</p>`
+
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
 //*===========================================
+// HTML Collection - array- like bir yapı ama direk array gibi kullanılamıyor o nedenle arraye dönüştürmek gerekir.
+//ArrayLike yapılar : arguments, HTML collection,NodeList(querySelectoAll ile gelir)
+// Array ile ArrayLike yapı arasındaki fark: Array-like yapılar diziler gibi indekslenebilir ve length özelliğine sahip olabilirler, ancak dizilerin sunduğu çoğu yöntemden (örneğin, push, pop, map, filter, vb.) yoksundurlar
 
+const addNewMovie=document.getElementsByClassName("add-new")
+console.log(addNewMovie);
+
+addNewMovie[4].style.color="red"
 
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
