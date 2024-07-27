@@ -50,6 +50,8 @@ for (let i=0;i<addNewMovie.length;i++){
 const arrayMovies=[...addNewMovie]
 console.log(arrayMovies);
 
+
+arrayMovies.forEach((item)=>item.style.color="blue")
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
