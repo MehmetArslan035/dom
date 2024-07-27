@@ -52,9 +52,23 @@ console.log(arrayMovies);
 
 
 arrayMovies.forEach((item)=>item.style.color="blue")
+
+// 3- Array.from(arraylike)
+
+console.log("Array.from",Array.from(arrayMovies));
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
+
+const listItems=document.getElementById("li")
+console.log(listItems)
+
+const h2ler=document.getElementsByTagName("h2")
+console.log(h2ler);
+
+const h2lerArray=[...h2ler]
+console.log(h2lerArray);
+h2lerArray.forEach((item)=> console.log(item.textContent))
 
 //* ========================================
 //*              QUERYSELECTOR()
