@@ -17,3 +17,12 @@ movieUl.innerHTML += `<li id="avatar" class="movie-item avatar">God Father</li>`
 // 2- Element Silme
 
 movieUl.removeChild(matrix)
+
+// Özellik ekleme - Attribute Ekleme
+// SetAttribute
+const movieInput=document.querySelector("#movie-input")
+movieInput.setAttribute("placeholder","Enter a movie name")
+
+movieInput.ariaPlaceholder="New Movie"
+
+movieInput.removeAttribute("type")
